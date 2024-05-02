@@ -10,7 +10,7 @@ authRouter = APIRouter()
 async def login(form_data:OAuth2PasswordRequestForm = Depends()):
     
     users_db = await get_users_db()
-    user = authenticate_user(users_db, form_data.username,form_data.password)
+    user = authenticate_user(users_db, form_data.username, form_data.password)
     
     access_token_expire = timedelta(minutes=30)
     

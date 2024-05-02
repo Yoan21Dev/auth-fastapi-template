@@ -1,6 +1,7 @@
 from src.modules.user.repository.UserRepository import UserRepository
 from src.database.db import SessionLocal
 
+
 class UserService():
     def __init__(self):
       self.userRepository = UserRepository(SessionLocal)

@@ -1,6 +1,6 @@
 from sqlalchemy.future import select
 from sqlalchemy.orm import Session
-from src.database.modelos import User
+from database.models import User
 
 class UserRepository():
 
